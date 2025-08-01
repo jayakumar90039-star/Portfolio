@@ -1,0 +1,254 @@
+.education {
+  padding: 100px 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.education-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.education-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.education-item {
+  position: relative;
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+.education-item.left {
+  left: 0;
+  padding-right: 40px;
+}
+
+.education-item.right {
+  left: 50%;
+  padding-left: 40px;
+}
+
+.education-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.education-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.education-item.left .education-content::after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-left-color: #ffffff;
+}
+
+.education-item.right .education-content::after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right-color: #ffffff;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.degree {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+  flex: 1;
+}
+
+.duration {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.institution {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #667eea;
+  margin: 0 0 15px 0;
+}
+
+.description {
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.achievements h5 {
+  color: #2d3748;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.achievements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  top: 30px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+}
+
+.education-item.left .timeline-dot {
+  right: -50px;
+}
+
+.education-item.right .timeline-dot {
+  left: -50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education {
+    padding: 80px 0;
+  }
+
+  .education-timeline::before {
+    left: 30px;
+  }
+
+  .education-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 70px !important;
+    padding-right: 0 !important;
+  }
+
+  .education-content::after {
+    display: none;
+  }
+
+  .education-item.left .education-content::after,
+  .education-item.right .education-content::after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 30px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: #ffffff;
+  }
+
+  .timeline-dot {
+    left: 20px !important;
+    right: auto !important;
+  }
+
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .degree {
+    font-size: 1.2rem;
+  }
+
+  .duration {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-container {
+    padding: 0 15px;
+  }
+
+  .education-item {
+    padding-left: 50px !important;
+  }
+
+  .education-content {
+    padding: 20px;
+  }
+
+  .degree {
+    font-size: 1.1rem;
+  }
+
+  .institution {
+    font-size: 1rem;
+  }
+
+  .timeline-dot {
+    left: 10px !important;
+    width: 16px;
+    height: 16px;
+  }
+
+  .education-timeline::before {
+    left: 18px;
+    width: 2px;
+  }
+}
