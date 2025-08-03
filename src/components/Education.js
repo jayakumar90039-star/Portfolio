@@ -7,7 +7,7 @@ const Education = () => {
       id: 1,
       degree: "Bachelor of Technology in Computer Science",
       institution: "Dhanalakshmi Srinivasan College of Engineering And Technology",
-      duration: "2024 - Presentx",
+      duration: "2024 - Present",
       description: "Specialized in software engineering, data structures, algorithms, and web development. Maintained excellent academic performance with focus on practical application of theoretical concepts.",
       achievements: [] // Add this line
     },
