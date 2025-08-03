@@ -5,13 +5,13 @@ const SocialLinks = () => {
   const socialLinks = [
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/your-profile',
+      url: 'https://www.linkedin.com/in/jayakumar-n-ba96b132b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       icon: 'fab fa-linkedin-in',
       color: '#0077b5'
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/your-username',
+      url: 'https://github.com/jayakumar90039-star',
       icon: 'fab fa-github',
       color: '#333'
     },
@@ -23,13 +23,13 @@ const SocialLinks = () => {
     },
     {
       name: 'Instagram',
-      url: 'https://instagram.com/your-username',
+      url: 'https://www.instagram.com/jk_xoul?igsh=MW5uZjdmeWpvYjRpZA==',
       icon: 'fab fa-instagram',
       color: '#e4405f'
     },
     {
       name: 'LeetCode',
-      url: 'https://leetcode.com/your-username',
+      url: 'https://leetcode.com/u/Jayakumar_njk/',
       icon: 'fas fa-code',
       color: '#ffa116'
     }
